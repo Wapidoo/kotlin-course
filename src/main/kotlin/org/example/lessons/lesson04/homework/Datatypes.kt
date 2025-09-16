@@ -14,15 +14,15 @@ val v11: Double = -0.001
 val v12: String = "OpenAI"
 // возможно тут имелся в виду boolean, тогда ошибка в синтаксисе и кавычки не нужны
 val v13: String = "true"
-// val v14: List<String> = listOf(3, 14) - тут нужен arrayOf
+val v14: List<Byte> = listOf(3, 14)
 val v15: Char = '9'
 val v16: Int = 2048
 val v17: Long = 10000000000L
-// val v18 = setOf("OpenAI", "Quantum Computing") - тут listOf
+val v18: Set<String> = setOf("OpenAI", "Quantum Computing")
 val v19: Float = 5.75f
 // val v20 = `1.414` - число в кавычках
 val v21: String = "Artificial Intelligence"
-// val v22 = arrayOf('x', "A") - здесь listOf
+val v22: Array<Any> = arrayOf('x', "A")
 val v23: String = "Android Studio"
 val v24: Char = '@'
 val v25: Int = 1024
@@ -39,7 +39,7 @@ val v35: Long = 72057594037927935L
 val v36: Float = 2.71828f
 val v37: Double = 101.0101
 val v38: String = "Quantum Computing"
-// val v39 = mapOf(2 to "true", 34 to "false") - возможно тут подразумевается boolean
+val v39: Map<Int, String> = mapOf(2 to "true", 34 to "false")
 val v40: Char = 'x'
 val v41: Short = 314
 val v42: Long = 123456789123456789L
@@ -48,9 +48,9 @@ val v43: Float = 6.626f
 
 // Подбери подходящий тип который будет:
 //Хранить букву, на которую указывает палец медиума во время спиритического сеанса - Char
-//Хранить количество ложек сахара, которые я кладу в одну чашку чая - Short
+//Хранить количество ложек сахара, которые я кладу в одну чашку чая - Byte
 //Хранить список расходов на доставку еды, чтобы ещё раз убедиться, что готовить было дешевле - listOf
-//Хранить длину очереди в столовой до миллиардной доли сантиметра - ??? Float
+//Хранить длину очереди в столовой до миллиардной доли сантиметра - Double
 //Хранить факт, закрыт ли баг после того, как его просто переименовали в фичу - Boolean
 //Хранить количество свистков чайника за день - Short
 //Хранить количество нажатий котом на клавиатуру ноутбука за всё время твоей работы - Int
